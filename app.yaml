@@ -35,7 +35,7 @@ spec:
     spec:
       containers:
       - name: app-ui
-        image: app-ui
+        image: dgisolfi/app:latest
         ports:
         - containerPort: 3000
-        imagePullPolicy: Never
+        imagePullPolicy: Always
