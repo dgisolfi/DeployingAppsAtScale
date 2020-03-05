@@ -99,7 +99,7 @@ take it down
 kubectl delete -f app.yaml
 ```
 
-## Deploy to kubernetes via helm
+### Deploy to kubernetes via helm
 
 create a new chart
 ```
@@ -120,3 +120,22 @@ Install the chart
 ```
 helm install app ./chart --set expose.nodePort.nodePort=30333
 ```
+
+
+package it up
+```
+
+```
+
+share
+
+```
+helm serve
+```
+
+
+```
+helm install app app-0.1.0.tgz
+```
+
+
