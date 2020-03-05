@@ -96,7 +96,27 @@ kubectl create -f app.yaml
 
 take it down
 ```
-kubectl create -f app.yaml
+kubectl delete -f app.yaml
 ```
 
 ## Deploy to kubernetes via helm
+
+create a new chart
+```
+helm create chart
+```
+
+Check the values (do you need to change the repo?)
+```
+vim ./chart/values.yaml
+```
+
+Use the linter to ensure the chart is valid
+```
+helm lint char
+```
+
+Install the chart 
+```
+helm install app ./chart --set expose.nodePort.nodePort=30333
+```
