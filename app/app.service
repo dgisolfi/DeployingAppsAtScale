@@ -1,13 +1,12 @@
 [Unit]
-Description=a simple web app
-Documentation=https://example.com
+Description=A simple web app
 After=network.target
 
 [Service]
 Environment=NODE_PORT=3000
 Type=simple
 User=lcars
-ExecStart=/usr/bin/node usr/bin/node /home/lcars/.repos/DeployingAppsAtScale/app/index.js
+ExecStart=/usr/bin/node /home/lcars/.repos/DeployingAppsAtScale/app/index.js
 Restart=on-failure
 
 [Install]
